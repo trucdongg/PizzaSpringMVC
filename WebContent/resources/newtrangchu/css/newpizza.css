@@ -1,0 +1,165 @@
+.black{
+	background: rgba(0,0,0,0.2);
+	
+}
+body {
+    padding: 0;
+    margin: 0;
+    --red: #C20B29;
+    --bred: rgb(245, 39, 56);
+    --white: white;
+    --black: #1A1A1A;
+    --grey: #ECE8DC;
+    --orange: rgb(255, 163, 24);
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    --px: 100px;
+}
+.jumbotron-fluid {
+    background-color: var(--red);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.text-white {
+    color: white;
+}
+.section {
+    padding: 0 var(--px);
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+nav ul.row {
+    margin: 0 20px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+}
+nav ul.row a {
+    color: white;
+    list-style: none;
+    margin: 0 20px;
+    font-size: 14px;
+    position: relative;
+}
+nav ul.row a.active::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: var(--orange);
+}
+nav .phone {
+    text-align: center;
+    margin: 0 30px;
+}
+nav .phone .text {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 500;
+}
+nav .phone .number {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+}
+nav .login {
+    margin-left: 10px;
+}
+nav .login a {
+    background-color: rgb(221, 73, 73);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 5px;
+}
+.top {
+    background-color: var(--red);
+}
+.title {
+    position: relative;
+}
+.title.active::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(245, 39, 56);
+    width: 60px;
+    height: 5px;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pizzas1 {
+    width: 100%;
+    padding-left: 100px;
+}
+.pizza1 {
+    width: 22%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .5s;
+    box-shadow: 0px 0px 20px red;
+}
+.pizza1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(243, 163, 15, 0.555);
+}
+.pizza1-des {
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(0, 0, 0, .8);
+}
+.pizza1-price {
+    font-weight: bold;
+    color: rgb(241, 105, 26);
+}
+.pizza1-foot {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.pizza1-foot select {
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.pizza1-foot .btn {
+    margin-left: 5px;
+    padding: 8px 30px;
+    font-weight: bold;
+    transition: .3s;
+    border: none;
+}
+.pizza1-foot .btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(114, 146, 59);
+}
+footer {
+    background-color: #1A1A1A;
+    height: 200px;
+    font-size: 15px;
+}
+footer ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding-right: 20px;
+    border-right: 1.5px solid var(--bred);
+}
+footer .right {
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.308);
+    font-size: 12px;
+}

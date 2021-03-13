@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+body {
+
+  padding-top: 70px;
+ 
+}
+.notice{
+	font-size:20px;
+	
+	color:red;
+}
+.sus{
+	font-size:20px;
+	color:green;
+}
+.nav-item .btn {
+	transition: .3s;
+}
+.nav-item .btn:hover{
+	transform: scale(1.1);
+}
+.mess{
+	margin-top:55px;
+	color:red;
+	font-size:20px;
+	
+}
